@@ -16,6 +16,7 @@ Project 2
 * Javascript
 * HTML
 * CSS
+* Git / Github
 
 
 # Useful Websites

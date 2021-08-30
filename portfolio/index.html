@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/index.js"></script>
+
+    <title>Kevin Kirby Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav_icon" id="home_icon" onmouseover="showHome()" onmouseout="hideHome()" href="#">⌂</a>
+            <a id="home_label" onmouseover="showHome()" onmouseout="hideHome()" href="#">Home</a>
+
+            <a class="nav_icon" id="about_icon" onmouseover="showAbout()" onmouseout="hideAbout()" href="#about">☺</a>
+            <a id="about_label" onmouseover="showAbout()" onmouseout="hideAbout()" href="#about">About Me</a>
+
+            <a class="nav_icon" id="work_icon" onmouseover="showWork()" onmouseout="hideWork()" href="#work">▭</a>
+            <a id="work_label" onmouseover="showWork()" onmouseout="hideWork()" href="#work">My Work</a>
+
+            <a class="nav_icon" id="contact_icon" onmouseover="showContact()" onmouseout="hideContact()" href="#contact">#</a>
+            <a id="contact_label" onmouseover="showContact()" onmouseout="hideContact()" href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <section id="background_1">
+            <div id="title">
+                <h1 id="title_name">KIRBY KIRBY</h1>
+                <h2 id="title_info">Software Engineering Student <br> Brigham Young University Idaho</h2>
+            </div>
+        </section>
+        <section id="background_2">
+            <div id="about">
+                <h1>About Me</h1>
+                <img id="profile_picture" src="images/Tall Profile Picture.JPEG" alt="Kevin Kirby">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nesciunt aliquam odit quod tenetur repudiandae aut distinctio sint at. Iste, animi vitae sit a eligendi quasi debitis id aperiam quo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, facilis id. Officiis explicabo nesciunt quam neque ducimus sint iure! Ipsa temporibus qui a. Iusto recusandae rem odio, quidem blanditiis accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem voluptate. Veritatis similique, quibusdam facere nostrum culpa vel, doloremque blanditiis animi assumenda voluptates neque voluptatem qui tenetur architecto. Facilis, eveniet!</h2>
+            </div>
+        </section>
+        <section id="background_3">
+            <div id="work">
+                <h1>My Work</h1>
+                <div id="work_grid">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa tempora illum maxime, fugiat molestiae provident explicabo blanditiis, quaerat sapiente, dicta tempore ratione vel minus fugit recusandae quos excepturi autem!</h1>
+                    <a href="https://kir15006.github.io/temple_inn/index.html"><img src="images/temple_homepage.PNG" alt=""></a>
+    
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa tempora illum maxime, fugiat molestiae provident explicabo blanditiis, quaerat sapiente, dicta tempore ratione vel minus fugit recusandae quos excepturi autem!</h1>
+                    <img src="images/placeholder.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem consequuntur consequatur dolorem maiores ea natus accusantium dignissimos aliquam! Numquam maiores dignissimos rem neque commodi accusantium corporis nostrum recusandae odio obcaecati.</h2>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message<label>
+                <textarea name="message" id="message" rows="10"></textarea>
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
