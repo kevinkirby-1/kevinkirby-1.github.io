@@ -120,7 +120,7 @@ nav {
 }
 /* Work Section */
 #background_3{
-    height: 200vh;
+    height: 150vh;
     background-image: url(/portfolio/images/white_sand.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -140,7 +140,7 @@ nav {
     justify-items: center;
     width: 70%;
     margin: auto;
-    grid-gap: 1rem;
+    grid-gap: 4rem;
 }
 #work_grid a{
     max-width: 80%;
