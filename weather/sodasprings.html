@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/weather_favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/town_pages.css">
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/weather_sodasprings.js"></script>
+    <script src="js/windchill.js"></script>
+
+
+    <title>Soda Springs</title>
+</head>
+<body>
+    <header>
+        <div class="large-view-header">
+            <img src="images/weather_logo.png" alt="weather logo">
+            <span><strong>East Idaho Forcast:</strong><br />Accurate and Up to Date</span>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><img src="images/weather_logo.png" alt="weather logo"><span><strong>East Idaho
+                            Forcast:</strong><br />Accurate and Up to Date</span><a class="ham" href="#">&#9776;</a></li>
+                <li class="btn"><a href="index.html">Home</a></li>
+                <li class="btn"><a href="preston.html">Preston</a></li>
+                <li class="btn"><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="btn"><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="btn"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="btn"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+                <ul>
+                    <h3>Soda Springs Weather Summary</h3>
+                    <li>Currently: <span id="currently"></span></li>
+                    <li>Current Temp: <span id="currentTemp"></span>° F</li>
+                    <li>High: <span id="highTemp"></span>° F</li>
+                    <li>Wind Chill: <span id="windChill"></span> °F</li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind Speed: <span id="windSpeed"></span> mph</li>
+                </ul>
+                <picture>
+                    <img src="images//sodasprings.jpg" alt="field with houses">
+                </picture>
+        </div>
+        <ul class="forcast">
+            <li><span id="forcastDay0"></span> <img id="forcastimg0" src="" alt="sun"> <span id="forcast0"></span></li>
+            <li><span id="forcastDay1"></span> <img id="forcastimg1" src="" alt="sun"> <span id="forcast1"></span></li>
+            <li><span id="forcastDay2"></span> <img id="forcastimg2" src="" alt="sun"> <span id="forcast2"></span></li>
+            <li><span id="forcastDay3"></span> <img id="forcastimg3" src="" alt="sun"> <span id="forcast3"></span></li>
+            <li><span id="forcastDay4"></span> <img id="forcastimg4" src="" alt="sun"> <span id="forcast4"></span></li>
+        </ul>
+        <div class="upcoming_events">
+            <h3>Upcoming Events</h3>
+            <ul id="event_list"></ul>
+        </div>
+        <div class="article">
+            <h3>Another heatwave returning to eastern Idaho this week</h3>
+            <img src="images/orange_river.jpg" alt="river at sunset">
+            <article>
+                Meteorologists with the National Weather Service in Pocatello say a heatwave will be returning to eastern Idaho this week and they want you to be prepared. <br>
+
+                Unusually hot temperatures are expected to arrive in Twin Falls and other parts of the Magic Valley on Tuesday. It’s expected to expand into eastern Idaho and the Arco Desert on Wednesday. <br>
+
+                The NWS is forecasting temperatures ranging from the upper 90s to 100 degrees. The heatwave will have an impact on Soda Springs, Idaho Falls, Rigby, Rexburg, St. Anthony, Driggs, Montpelier and surrounding communities. Challis and other areas farther north will also be affected. <br>
+
+                The heatwave will be short-lived as a cold front arrives Wednesday night, bringing cooler temperatures for Thursday and Friday. <br>
+                The heatwave comes as much of the western U.S. is experiencing drought conditions. Fire danger remains high as well. Officials are asking you to take the necessary steps to avoid causing a wildfire. With record high temperatures across the area, conditions throughout eastern Idaho are drying rapidly, and a fire may start easily, spread quickly and burn intensely. <br> <br> <a href="https://www.eastidahonews.com/2021/07/another-heatwave-returning-to-eastern-idaho-this-week/">Continue reading here</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Address: 123 Weather St. Preston ID 83263</p>
+                <p>Email: contact@eastidahoforecast.com</p>
+                <p>Phone: (208) 555- 4921</p>
+                <br>
+                <p>Weather Data Source: OpenWeatherMap</p>
+            </div>
+            <div class="map">
+                <img src="images/temp-weather-map.PNG" alt="map">
+                <p id="currentDate"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Noto Sans HK']
+  }
+});
+    </script>
+</body>
+</html>

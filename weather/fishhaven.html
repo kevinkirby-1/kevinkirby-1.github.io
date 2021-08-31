@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/weather_favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/town_pages.css">
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/weather_fishhaven.js"></script>
+    <script src="js/windchill.js"></script>
+
+
+    <title>Fish Haven</title>
+</head>
+<body>
+    <header>
+        <div class="large-view-header">
+            <img src="images/weather_logo.png" alt="weather logo">
+            <span><strong>East Idaho Forcast:</strong><br />Accurate and Up to Date</span>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><img src="images/weather_logo.png" alt="weather logo"><span><strong>East Idaho
+                            Forcast:</strong><br />Accurate and Up to Date</span><a class="ham" href="#">&#9776;</a></li>
+                <li class="btn"><a href="index.html">Home</a></li>
+                <li class="btn"><a href="preston.html">Preston</a></li>
+                <li class="btn"><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="btn"><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="btn"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="btn"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+                <ul>
+                    <h3>Fish Haven Weather Summary</h3>
+                    <li>Currently: <span id="currently"></span></li>
+                    <li>Current Temp: <span id="currentTemp"></span>° F</li>
+                    <li>High: <span id="highTemp"></span>° F</li>
+                    <li>Wind Chill: <span id="windChill"></span> °F</li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind Speed: <span id="windSpeed"></span> mph</li>
+                </ul>
+                <picture>
+                    <!-- <source media="(min-width:800px)" srcset="images/W06_hero_image_1000px.jpg">
+                    <source media="(min-width:500px)" srcset="images/W06_hero_image_800px.jpg"> -->
+                    <img src="images//fishhaven.jpg" alt="field with houses">
+                </picture>
+        </div>
+        <ul class="forcast">
+            <li><span id="forcastDay0"></span> <img id="forcastimg0" src="" alt="sun"> <span id="forcast0"></span></li>
+            <li><span id="forcastDay1"></span> <img id="forcastimg1" src="" alt="sun"> <span id="forcast1"></span></li>
+            <li><span id="forcastDay2"></span> <img id="forcastimg2" src="" alt="sun"> <span id="forcast2"></span></li>
+            <li><span id="forcastDay3"></span> <img id="forcastimg3" src="" alt="sun"> <span id="forcast3"></span></li>
+            <li><span id="forcastDay4"></span> <img id="forcastimg4" src="" alt="sun"> <span id="forcast4"></span></li>
+        </ul>
+        <div class="upcoming_events">
+            <h3>Upcoming Events</h3>
+            <ul id="event_list"></ul>
+        </div>
+        <div class="article">
+            <h3>Idaho Fish and Game announces free fishing day on Saturday</h3>
+            <img src="images/fishing_grandpa.jpg" alt="Man Fishing With Child">
+            <article>
+                Grab your poles, fishing is free in Idaho all day on Saturday. <br>
+
+                Experienced or beginning fishers can spend the day at numerous locations without charge throughout the state, but there are still rules, such as bag size, in place. Additional information regarding regulations can be found at the Idaho Fish and Game website. <br>
+                
+                “It’s a great opportunity for people to go enjoy fishing without having to pay for a fishing license,” said Idaho Fish and Game spokesman Roger Phillips. <br>
+                
+                Phillips emphasized that this is an opportunity for the whole family to participate in a recreational event without having to spend money. <br>
+                
+                Usually Idaho Fish and Game goes to fishing locations throughout the state to host events and give lessons for free fishing day. Phillips says with current COVID-19 protocols, those events will not be happening this year but people are still welcome to go out and enjoy free fishing. <br> <br> <a href="https://www.eastidahonews.com/2021/06/idaho-fish-and-game-announces-free-fishing-day-on-saturday/">Continue reading here</a>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Address: 123 Weather St. Preston ID 83263</p>
+                <p>Email: contact@eastidahoforecast.com</p>
+                <p>Phone: (208) 555- 4921</p>
+                <br>
+                <p>Weather Data Source: OpenWeatherMap</p>
+            </div>
+            <div class="map">
+                <img src="images/temp-weather-map.PNG" alt="map">
+                <p id="currentDate"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Noto Sans HK']
+  }
+});
+    </script>
+</body>
+</html>
